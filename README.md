@@ -8,14 +8,14 @@ This project provides a set of simple scripts for MAC OS (tested on High Sierra)
 
 # Installation
   
-# Copy gatewayarp.plist to /Library/LaunchDaemons
+Copy gatewayarp.plist to /Library/LaunchDaemons
 sudo cp setgatewayarp.plist /Library/LaunchDaemons
 
-# Install setgatewayarp service on MAC OS
+Install setgatewayarp service on MAC OS
 sudo launchctl load /Library/LaunchDaemons/setgatewayarp.plist
 
-# Copy setgatewayarp.sh to /usr/local/bin
+Copy setgatewayarp.sh to /usr/local/bin
 sudo cp gatewayarp.sh /usr/local/bin
 sudo chmod +x /usr/local/bin/setgatewayarp.sh
 
-# Done
+Done
