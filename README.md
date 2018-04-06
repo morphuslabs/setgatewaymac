@@ -32,7 +32,7 @@ Figure: Setting up gateway ARP in a permament way.
 
 Finally, you may check your system's ARP table:
 
-![arp -an command](https://cdn-images-1.medium.com/max/1600/1*Jt6GNtK8DJ9PQIS5NXBshQ.png)
+![arp -an command](https://cdn-images-1.medium.com/max/1600/1*umkKNpDaRGyzJrjXdTTx7w.png)
 Figure: ARP table with permanent gateway MAC Address set
 
 ## Uninstall
