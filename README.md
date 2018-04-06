@@ -35,5 +35,12 @@ Finally, you may check your system's ARP table:
 ![arp -an command](https://cdn-images-1.medium.com/max/1600/1*Jt6GNtK8DJ9PQIS5NXBshQ.png)
 Figure: ARP table with permanent gateway MAC Address set
 
+## Uninstall
+```
+sudo launchctl unload /Library/LaunchDaemons/setgatewayarp.plist
+sudo rm /Library/LaunchDaemons/setgatewayarp.plist
+sudo rm /usr/local/bin/setgatewayarp.sh
+```
+
 ## Credits
-Original idea and script from Morphus Labs (morphuslabs.com)
+Morphus Labs Team (morphuslabs.com)
