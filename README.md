@@ -1,6 +1,6 @@
 # Set Gateway ARP for MAC OS (BETA)
 
-ARP Spoofing is an old but yet efficient way to carry out attacks MITM attacks on a local network. Although we may have mitigation machanisms, like DHCP Snooping and Dynamic ARP Inspection (DAI), set on the corporate network, when we are connected to a more insecure environment, we may be at risk.
+ARP Spoofing is an old yet efficient way to carry out MITM attacks on a local network. Although we may have mitigation machanisms, like DHCP Snooping and Dynamic ARP Inspection (DAI), set on the corporate network, when we are connected to a less secure environment, we may be at risk.
 
 In a MITM ARP Spoofing scenario, attacker will send spoofed ARP messages to victims in order to associate its own MAC Address with the network gateway's allowing him to intercept and manipulate all the traffic.
 
