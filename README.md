@@ -22,3 +22,18 @@ sudo cp setgatewayarp.sh /usr/local/bin
 sudo chmod +x /usr/local/bin/setgatewayarp.sh
 ```
 Done
+
+## Check results
+
+Open system Console logs (Applications -> Utilities -> Console) and filter for "setgatewayarp" while you connect to a different network (ie: WiFi). If everything was set up properly, you may see the logs from scripts setting up the gateway ARP in a permament way, as in figure bellow.
+
+![setgatewayarp logs](https://cdn-images-1.medium.com/max/1600/1*uhgFPap0JHBxvfpa3Pj-eA.png)
+Figure: Setting up gateway ARP in a permament way.
+
+Finally, you may check your system's ARP table:
+
+![arp -an command](https://cdn-images-1.medium.com/max/1600/1*Jt6GNtK8DJ9PQIS5NXBshQ.png)
+Figure: ARP table with permanent gateway MAC Address set
+
+## Credits
+Original idea and script from Morphus Labs (morphuslabs.com)
