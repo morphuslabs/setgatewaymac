@@ -31,7 +31,7 @@ Done
 
 Open system Console logs (Applications -> Utilities -> Console) and filter for "setgatewaymac" while you connect to a different network (ie: WiFi). If everything is set properly, you may see the logs from scripts permanently setting the gateway MAC on your system ARP table, as in figure bellow.
 
-![setgatewayarp logs](https://cdn-images-1.medium.com/max/1600/1*uhgFPap0JHBxvfpa3Pj-eA.png)
+![setgatewayarp logs](https://cdn-images-1.medium.com/max/1600/1*znuMKd2kdj-HU-NiGths2w.png)
 Figure: Setting up gateway MAC.
 
 Finally, you may check your system's ARP table:
