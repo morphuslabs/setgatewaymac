@@ -52,7 +52,6 @@ sudo rm /usr/local/bin/setgatewaymac.sh
 Copy **setgatewaymac.sh** to **/etc/NetworkManager/dispatcher.d/25-setgatewaymac**
 ```
 sudo cp setgatewaymac.sh /etc/NetworkManager/dispatcher.d/25-setgatewaymac
-sudo chmod +x /usr/local/bin/setgatewaymac.sh
 ```
 Give Correct permissions
 ```
