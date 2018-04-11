@@ -1,4 +1,4 @@
-# Set Gateway MAC for Mac OS (BETA)
+# Set Gateway MAC for Mac OS and Linux (BETA)
 
 [ARP](https://en.wikipedia.org/wiki/Address_Resolution_Protocol) Spoofing is an old yet efficient way to carry out [MITM](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) attacks on a local network. Although we may have mitigation mechanisms, like [DHCP Snooping](https://en.wikipedia.org/wiki/DHCP_snooping) and Dynamic ARP Inspection (DAI), set on the corporate network, when we are connected to a less secure environment, we may be at risk.
 
@@ -9,8 +9,9 @@ This project provides a set of simple scripts for Mac OS that automatically sets
 ## Tested OS versions
 
 * High Sierra
+* Fedora 27
 
-## Installation
+## Mac OS Installation
 
 Copy **setgatewaymac.plist** to **/Library/LaunchDaemons**
 ```
@@ -45,6 +46,19 @@ sudo launchctl unload /Library/LaunchDaemons/setgatewaymac.plist
 sudo rm /Library/LaunchDaemons/setgatewaymac.plist
 sudo rm /usr/local/bin/setgatewaymac.sh
 ```
+
+## Linux Installation (Using NetworkManager)
+
+Copy **setgatewaymac.sh** to **/etc/NetworkManager/dispatcher.d/25-setgatewaymac**
+```
+sudo cp setgatewaymac.sh /etc/NetworkManager/dispatcher.d/25-setgatewaymac
+```
+Give Correct permissions
+```
+chown root:root /etc/NetworkManager/dispatcher.d/25-setgatewaymac
+sudo chmod +x 733 /etc/NetworkManager/dispatcher.d/25-setgatewaymac
+```
+Done
 
 ## Credits
 Morphus Labs Team (morphuslabs.com)
