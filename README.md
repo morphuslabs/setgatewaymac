@@ -15,7 +15,7 @@ This project provides a set of simple scripts for Mac OS that automatically sets
 
 Copy **setgatewaymac.plist** to **/Library/LaunchDaemons**
 ```
-sudo cp setgatewaymac.plist /Library/LaunchDaemons
+sudo cp macos/setgatewaymac.plist /Library/LaunchDaemons
 ```
 Install the **setgatewaymac service** on Mac OS
 ```
@@ -23,7 +23,7 @@ sudo launchctl load /Library/LaunchDaemons/setgatewaymac.plist
 ```
 Copy **setgatewaymac.sh** to **/usr/local/bin**
 ```
-sudo cp setgatewaymac.sh /usr/local/bin
+sudo cp macos/setgatewaymac.sh /usr/local/bin
 sudo chmod +x /usr/local/bin/setgatewaymac.sh
 ```
 Done
@@ -51,7 +51,7 @@ sudo rm /usr/local/bin/setgatewaymac.sh
 
 Copy **setgatewaymac.sh** to **/etc/NetworkManager/dispatcher.d/25-setgatewaymac**
 ```
-sudo cp setgatewaymac.sh /etc/NetworkManager/dispatcher.d/25-setgatewaymac
+sudo cp linux/setgatewaymac.sh /etc/NetworkManager/dispatcher.d/25-setgatewaymac
 ```
 Give Correct permissions
 ```
