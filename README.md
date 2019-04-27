@@ -55,8 +55,8 @@ sudo cp linux/setgatewaymac.sh /etc/NetworkManager/dispatcher.d/25-setgatewaymac
 ```
 Give Correct permissions
 ```
-chown root:root /etc/NetworkManager/dispatcher.d/25-setgatewaymac
-sudo chmod +x 733 /etc/NetworkManager/dispatcher.d/25-setgatewaymac
+sudo chown root:root /etc/NetworkManager/dispatcher.d/25-setgatewaymac
+sudo chmod +x /etc/NetworkManager/dispatcher.d/25-setgatewaymac
 ```
 Done
 
